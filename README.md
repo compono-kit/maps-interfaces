@@ -1,4 +1,4 @@
-# ComponoKit / Lists-Interfaces
+# ComponoKit / Maps-Interfaces
 
 **Interfaces for strongly typed map objects for PHP 8+**
 
