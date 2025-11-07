@@ -1,0 +1,44 @@
+<?php declare(strict_types=1);
+
+namespace ComponoKit\Types\Maps\Interfaces;
+
+use ComponoKit\Types\Interfaces\RepresentsString;
+use ComponoKit\Types\Interfaces\RepresentsType;
+
+interface RepresentsStringMap extends RepresentsType, \Iterator, \Countable
+{
+	public function equalsValues( RepresentsStringMap $map ): bool;
+
+	/**
+	 * @return array<string, RepresentsString>
+	 */
+	public function toNativeType(): array;
+
+	/**
+	 * @return array<string, string>
+	 */
+	public function toNativeArray(): array;
+
+	public function get( string|\Stringable $key ): RepresentsString;
+
+	public function exists( string|\Stringable $key ): bool;
+
+	/**
+	 * @return \Iterator<int, string>
+	 */
+	public function keys(): \Iterator;
+
+	/**
+	 * @return \Iterator<int, RepresentsString>
+	 */
+	public function values(): \Iterator;
+
+	/**
+	 * @return \Iterator<string, string>
+	 */
+	public function nativeKeyValues(): \Iterator;
+
+	public function count(): int;
+
+	public function current(): RepresentsString;
+}
