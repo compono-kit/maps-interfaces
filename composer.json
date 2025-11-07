@@ -1,6 +1,6 @@
 {
 	"name": "compono-kit/maps-interfaces",
-	"description": "Interfaces for list types using types with implementations of compono-kit/types-interfaces",
+	"description": "Interfaces for map types using types with implementations of compono-kit/types-interfaces",
 	"minimum-stability": "dev",
 	"prefer-stable": true,
 	"license": "proprietary",
