@@ -2,7 +2,6 @@
 
 namespace ComponoKit\Types\Maps\Interfaces;
 
-use ComponoKit\Types\Interfaces\RepresentsFloat;
 use ComponoKit\Types\Interfaces\RepresentsType;
 
 interface RepresentsMixedTypeMap extends RepresentsType, \Iterator, \Countable
