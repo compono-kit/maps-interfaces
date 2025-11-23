@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace ComponoKit\Types\Maps\Interfaces\Immutable;
+namespace ComponoKit\Types\Maps\Interfaces\Immutables;
 
 use ComponoKit\Types\Maps\Interfaces\RepresentsFloatMap;
 use ComponoKit\Types\Maps\Interfaces\RepresentsNativeFloatMap;

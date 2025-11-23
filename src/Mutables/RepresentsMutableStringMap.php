@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace ComponoKit\Types\Maps\Interfaces\Mutable;
+namespace ComponoKit\Types\Maps\Interfaces\Mutables;
 
 use ComponoKit\Types\Interfaces\RepresentsString;
 use ComponoKit\Types\Maps\Interfaces\RepresentsStringMap;
