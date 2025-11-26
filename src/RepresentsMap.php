@@ -14,4 +14,14 @@ interface RepresentsMap extends RepresentsType, \Iterator, \Countable
 	public function keys(): \Iterator;
 
 	public function count(): int;
+
+	/**
+	 * @return array<string, float|int|string|bool|array>
+	 */
+	public function toNativeArray(): array;
+
+	/**
+	 * @return \Iterator<string, float|int|string|bool|array>
+	 */
+	public function nativeKeyValues(): \Iterator;
 }

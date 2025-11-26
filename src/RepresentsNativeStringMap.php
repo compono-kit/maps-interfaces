@@ -11,6 +11,11 @@ interface RepresentsNativeStringMap extends RepresentsMap
 	 */
 	public function toNativeType(): array;
 
+	/**
+	 * @return array<string, string>
+	 */
+	public function toNativeArray(): array;
+
 	public function get( string|\Stringable $key ): string;
 
 	/**

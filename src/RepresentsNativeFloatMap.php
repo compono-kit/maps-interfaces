@@ -11,6 +11,11 @@ interface RepresentsNativeFloatMap extends RepresentsMap
 	 */
 	public function toNativeType(): array;
 
+	/**
+	 * @return array<string, float>
+	 */
+	public function toNativeArray(): array;
+
 	public function get( string|\Stringable $key ): float;
 
 	/**
