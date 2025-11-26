@@ -2,9 +2,7 @@
 
 namespace ComponoKit\Types\Maps\Interfaces;
 
-use ComponoKit\Types\Interfaces\RepresentsType;
-
-interface RepresentsNativeStringMap extends RepresentsType, \Iterator, \Countable
+interface RepresentsNativeStringMap extends RepresentsMap
 {
 	public function equalsValues( RepresentsNativeStringMap $map ): bool;
 
@@ -15,19 +13,10 @@ interface RepresentsNativeStringMap extends RepresentsType, \Iterator, \Countabl
 
 	public function get( string|\Stringable $key ): string;
 
-	public function exists( string|\Stringable $key ): bool;
-
-	/**
-	 * @return \Iterator<int, string>
-	 */
-	public function keys(): \Iterator;
-
 	/**
 	 * @return \Iterator<int, string>
 	 */
 	public function values(): \Iterator;
-
-	public function count(): int;
 
 	public function current(): string;
 }

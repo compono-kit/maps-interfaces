@@ -4,7 +4,7 @@ namespace ComponoKit\Types\Maps\Interfaces;
 
 use ComponoKit\Types\Interfaces\RepresentsTypeException;
 
-interface RepresentsMapTypeException extends RepresentsTypeException
+interface RepresentsMapException extends RepresentsTypeException
 {
 
 }

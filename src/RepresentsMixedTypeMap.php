@@ -4,7 +4,7 @@ namespace ComponoKit\Types\Maps\Interfaces;
 
 use ComponoKit\Types\Interfaces\RepresentsType;
 
-interface RepresentsMixedTypeMap extends RepresentsType, \Iterator, \Countable
+interface RepresentsMixedTypeMap extends RepresentsTypeMap
 {
 	public function equalsValues( RepresentsMixedTypeMap $map ): bool;
 
@@ -20,13 +20,6 @@ interface RepresentsMixedTypeMap extends RepresentsType, \Iterator, \Countable
 
 	public function get( string|\Stringable $key ): RepresentsType;
 
-	public function exists( string|\Stringable $key ): bool;
-
-	/**
-	 * @return \Iterator<int, string>
-	 */
-	public function keys(): \Iterator;
-
 	/**
 	 * @return \Iterator<int, RepresentsType>
 	 */
@@ -36,8 +29,6 @@ interface RepresentsMixedTypeMap extends RepresentsType, \Iterator, \Countable
 	 * @return \Iterator<string, float|int|string|bool|array>
 	 */
 	public function nativeKeyValues(): \Iterator;
-
-	public function count(): int;
 
 	public function current(): RepresentsType;
 }

@@ -3,9 +3,8 @@
 namespace ComponoKit\Types\Maps\Interfaces;
 
 use ComponoKit\Types\Interfaces\RepresentsInteger;
-use ComponoKit\Types\Interfaces\RepresentsType;
 
-interface RepresentsIntegerMap extends RepresentsType, \Iterator, \Countable
+interface RepresentsIntegerMap extends RepresentsTypeMap
 {
 	public function equalsValues( RepresentsIntegerMap $map ): bool;
 
@@ -21,13 +20,6 @@ interface RepresentsIntegerMap extends RepresentsType, \Iterator, \Countable
 
 	public function get( string|\Stringable $key ): RepresentsInteger;
 
-	public function exists( string|\Stringable $key ): bool;
-
-	/**
-	 * @return \Iterator<int, string>
-	 */
-	public function keys(): \Iterator;
-
 	/**
 	 * @return \Iterator<int, RepresentsInteger>
 	 */
@@ -37,8 +29,6 @@ interface RepresentsIntegerMap extends RepresentsType, \Iterator, \Countable
 	 * @return \Iterator<string, int>
 	 */
 	public function nativeKeyValues(): \Iterator;
-
-	public function count(): int;
 
 	public function current(): RepresentsInteger;
 }

@@ -3,9 +3,8 @@
 namespace ComponoKit\Types\Maps\Interfaces;
 
 use ComponoKit\Types\Interfaces\RepresentsFloat;
-use ComponoKit\Types\Interfaces\RepresentsType;
 
-interface RepresentsFloatMap extends RepresentsType, \Iterator, \Countable
+interface RepresentsFloatMap extends RepresentsTypeMap
 {
 	public function equalsValues( RepresentsFloatMap $map ): bool;
 
@@ -21,13 +20,6 @@ interface RepresentsFloatMap extends RepresentsType, \Iterator, \Countable
 
 	public function get( string|\Stringable $key ): RepresentsFloat;
 
-	public function exists( string|\Stringable $key ): bool;
-
-	/**
-	 * @return \Iterator<int, string>
-	 */
-	public function keys(): \Iterator;
-
 	/**
 	 * @return \Iterator<int, RepresentsFloat>
 	 */
@@ -37,8 +29,6 @@ interface RepresentsFloatMap extends RepresentsType, \Iterator, \Countable
 	 * @return \Iterator<string, float>
 	 */
 	public function nativeKeyValues(): \Iterator;
-
-	public function count(): int;
 
 	public function current(): RepresentsFloat;
 }

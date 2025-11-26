@@ -3,9 +3,8 @@
 namespace ComponoKit\Types\Maps\Interfaces;
 
 use ComponoKit\Types\Interfaces\RepresentsBoolean;
-use ComponoKit\Types\Interfaces\RepresentsType;
 
-interface RepresentsBooleanMap extends RepresentsType, \Iterator, \Countable
+interface RepresentsBooleanMap extends RepresentsTypeMap
 {
 	public function equalsValues( RepresentsBooleanMap $map ): bool;
 
@@ -21,13 +20,6 @@ interface RepresentsBooleanMap extends RepresentsType, \Iterator, \Countable
 
 	public function get( string|\Stringable $key ): RepresentsBoolean;
 
-	public function exists( string|\Stringable $key ): bool;
-
-	/**
-	 * @return \Iterator<int, string>
-	 */
-	public function keys(): \Iterator;
-
 	/**
 	 * @return \Iterator<int, RepresentsBoolean>
 	 */
@@ -37,8 +29,6 @@ interface RepresentsBooleanMap extends RepresentsType, \Iterator, \Countable
 	 * @return \Iterator<string, bool>
 	 */
 	public function nativeKeyValues(): \Iterator;
-
-	public function count(): int;
 
 	public function current(): RepresentsBoolean;
 }
