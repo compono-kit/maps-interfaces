@@ -7,6 +7,8 @@ use ComponoKit\Types\Maps\Interfaces\RepresentsMixedTypeMap;
 
 interface RepresentsImmutableMixedTypeMap extends RepresentsMixedTypeMap
 {
+	public function exists( string|\Stringable $key ): bool;
+
 	public function set( string|\Stringable $key, RepresentsType $value ): static;
 
 	public function remove( string|\Stringable $key ): static;

@@ -7,6 +7,8 @@ use ComponoKit\Types\Maps\Interfaces\RepresentsNativeIntegerMap;
 
 interface RepresentsImmutableNativeIntegerMap extends RepresentsNativeIntegerMap
 {
+	public function exists( string|\Stringable $key ): bool;
+
 	public function set( string|\Stringable $key, int $value ): static;
 
 	public function remove( string|\Stringable $key ): static;

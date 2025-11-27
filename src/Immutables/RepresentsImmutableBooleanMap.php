@@ -7,6 +7,8 @@ use ComponoKit\Types\Maps\Interfaces\RepresentsBooleanMap;
 
 interface RepresentsImmutableBooleanMap extends RepresentsBooleanMap
 {
+	public function exists( string|\Stringable $key ): bool;
+
 	public function set( string|\Stringable $key, RepresentsBoolean $value ): static;
 
 	public function remove( string|\Stringable $key ): static;

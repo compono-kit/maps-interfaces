@@ -7,6 +7,8 @@ use ComponoKit\Types\Maps\Interfaces\RepresentsNativeFloatMap;
 
 interface RepresentsImmutableNativeFloatMap extends RepresentsNativeFloatMap
 {
+	public function exists( string|\Stringable $key ): bool;
+
 	public function set( string|\Stringable $key, float $value ): static;
 
 	public function remove( string|\Stringable $key ): static;

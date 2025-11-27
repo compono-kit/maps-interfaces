@@ -11,8 +11,6 @@ interface RepresentsTypeMap extends RepresentsMap
 	 */
 	public function toNativeArray(): array;
 
-	public function get( string|\Stringable $key ): RepresentsType;
-
 	/**
 	 * @return \Iterator<int, RepresentsType>
 	 */

@@ -6,8 +6,6 @@ use ComponoKit\Types\Interfaces\RepresentsType;
 
 interface RepresentsMap extends RepresentsType, \Iterator, \Countable
 {
-	public function exists( string|\Stringable $key ): bool;
-
 	/**
 	 * @return \Iterator<int, string>
 	 */
