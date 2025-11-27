@@ -9,6 +9,8 @@ interface RepresentsImmutableMixedTypeMap extends RepresentsMixedTypeMap
 {
 	public function exists( string|\Stringable $key ): bool;
 
+	public function get( string|\Stringable $key ): RepresentsType;
+
 	public function set( string|\Stringable $key, RepresentsType $value ): static;
 
 	public function remove( string|\Stringable $key ): static;

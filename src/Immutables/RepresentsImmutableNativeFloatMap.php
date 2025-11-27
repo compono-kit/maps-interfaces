@@ -9,6 +9,8 @@ interface RepresentsImmutableNativeFloatMap extends RepresentsNativeFloatMap
 {
 	public function exists( string|\Stringable $key ): bool;
 
+	public function get( string|\Stringable $key ): float;
+
 	public function set( string|\Stringable $key, float $value ): static;
 
 	public function remove( string|\Stringable $key ): static;

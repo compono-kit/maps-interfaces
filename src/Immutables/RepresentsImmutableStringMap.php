@@ -9,6 +9,8 @@ interface RepresentsImmutableStringMap extends RepresentsStringMap
 {
 	public function exists( string|\Stringable $key ): bool;
 
+	public function get( string|\Stringable $key ): RepresentsString;
+
 	public function set( string|\Stringable $key, RepresentsString $value ): static;
 
 	public function remove( string|\Stringable $key ): static;

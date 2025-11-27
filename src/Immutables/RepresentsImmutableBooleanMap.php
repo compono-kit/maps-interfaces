@@ -9,6 +9,8 @@ interface RepresentsImmutableBooleanMap extends RepresentsBooleanMap
 {
 	public function exists( string|\Stringable $key ): bool;
 
+	public function get( string|\Stringable $key ): RepresentsBoolean;
+
 	public function set( string|\Stringable $key, RepresentsBoolean $value ): static;
 
 	public function remove( string|\Stringable $key ): static;

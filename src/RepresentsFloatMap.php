@@ -18,8 +18,6 @@ interface RepresentsFloatMap extends RepresentsTypeMap
 	 */
 	public function toNativeArray(): array;
 
-	public function get( string|\Stringable $key ): RepresentsFloat;
-
 	/**
 	 * @return \Iterator<int, RepresentsFloat>
 	 */

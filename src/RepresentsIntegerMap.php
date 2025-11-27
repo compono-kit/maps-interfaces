@@ -18,8 +18,6 @@ interface RepresentsIntegerMap extends RepresentsTypeMap
 	 */
 	public function toNativeArray(): array;
 
-	public function get( string|\Stringable $key ): RepresentsInteger;
-
 	/**
 	 * @return \Iterator<int, RepresentsInteger>
 	 */

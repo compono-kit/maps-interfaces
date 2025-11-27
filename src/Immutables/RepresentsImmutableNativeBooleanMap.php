@@ -9,6 +9,8 @@ interface RepresentsImmutableNativeBooleanMap extends RepresentsNativeBooleanMap
 {
 	public function exists( string|\Stringable $key ): bool;
 
+	public function get( string|\Stringable $key ): bool;
+
 	public function set( string|\Stringable $key, bool $value ): static;
 
 	public function remove( string|\Stringable $key ): static;

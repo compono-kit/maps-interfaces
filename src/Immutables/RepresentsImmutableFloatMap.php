@@ -9,6 +9,8 @@ interface RepresentsImmutableFloatMap extends RepresentsFloatMap
 {
 	public function exists( string|\Stringable $key ): bool;
 
+	public function get( string|\Stringable $key ): RepresentsFloat;
+
 	public function set( string|\Stringable $key, RepresentsFloat $value ): static;
 
 	public function remove( string|\Stringable $key ): static;

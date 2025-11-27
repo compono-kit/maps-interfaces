@@ -16,8 +16,6 @@ interface RepresentsNativeStringMap extends RepresentsMap
 	 */
 	public function toNativeArray(): array;
 
-	public function get( string|\Stringable $key ): string;
-
 	/**
 	 * @return \Iterator<int, string>
 	 */

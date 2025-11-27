@@ -18,8 +18,6 @@ interface RepresentsBooleanMap extends RepresentsTypeMap
 	 */
 	public function toNativeArray(): array;
 
-	public function get( string|\Stringable $key ): RepresentsBoolean;
-
 	/**
 	 * @return \Iterator<int, RepresentsBoolean>
 	 */

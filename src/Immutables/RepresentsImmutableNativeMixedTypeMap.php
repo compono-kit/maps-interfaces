@@ -9,6 +9,8 @@ interface RepresentsImmutableNativeMixedTypeMap extends RepresentsNativeMixedTyp
 {
 	public function exists( string|\Stringable $key ): bool;
 
+	public function get( string|\Stringable $key ): float|int|string|bool|array;
+
 	public function set( string|\Stringable $key, float|int|string|bool|array $value ): static;
 
 	public function remove( string|\Stringable $key ): static;

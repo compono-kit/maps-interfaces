@@ -11,8 +11,6 @@ interface RepresentsNativeMixedTypeMap extends RepresentsMap
 	 */
 	public function toNativeType(): array;
 
-	public function get( string|\Stringable $key ): float|int|string|bool|array;
-
 	/**
 	 * @return \Iterator<int, float|int|string|bool|array>
 	 */

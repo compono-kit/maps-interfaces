@@ -9,6 +9,8 @@ interface RepresentsImmutableNativeIntegerMap extends RepresentsNativeIntegerMap
 {
 	public function exists( string|\Stringable $key ): bool;
 
+	public function get( string|\Stringable $key ): int;
+
 	public function set( string|\Stringable $key, int $value ): static;
 
 	public function remove( string|\Stringable $key ): static;

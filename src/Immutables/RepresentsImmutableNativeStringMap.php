@@ -9,6 +9,8 @@ interface RepresentsImmutableNativeStringMap extends RepresentsNativeStringMap
 {
 	public function exists( string|\Stringable $key ): bool;
 
+	public function get( string|\Stringable $key ): string;
+
 	public function set( string|\Stringable $key, string $value ): static;
 
 	public function remove( string|\Stringable $key ): static;
