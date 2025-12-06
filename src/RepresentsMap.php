@@ -22,4 +22,6 @@ interface RepresentsMap extends RepresentsType, \Iterator, \Countable
 	 * @return \Iterator<string, float|int|string|bool|array>
 	 */
 	public function nativeKeyValues(): \Iterator;
+
+	public function toJson( bool $pretty = false ): string;
 }
